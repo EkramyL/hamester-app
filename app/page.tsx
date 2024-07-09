@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="px-2">
+    <div className="flex w-full flex-col px-4">
       <Infobar />
     </div>
   );
