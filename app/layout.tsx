@@ -19,12 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex h-screen max-w-xl flex-col bg-slate-800 font-bold text-white">
+        <div className="flex h-screen max-w-xl flex-col bg-[#1c1f24] font-bold text-white">
           <div className="flex">
             <UpperNav />
           </div>
           <main className="flex flex-grow">{children}</main>
-          <div className="flex bg-slate-400">
+          <div className="mx-1 flex rounded-2xl bg-[#272a2f] p-1">
             <LowerNav />
           </div>
         </div>

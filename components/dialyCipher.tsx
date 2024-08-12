@@ -2,7 +2,10 @@ import { dailyCipher } from "@/public/images";
 import Image from "next/image";
 import React from "react";
 
-const DailyCipher = () => {
+interface DailyCipherTimeLeft {
+  dailyCipherTimeLeft: string;
+}
+const DailyCipher = ({ dailyCipherTimeLeft }: DailyCipherTimeLeft) => {
   return (
     <div className="flex w-full flex-col px-4 py-2 text-center">
       <div className="">
@@ -15,7 +18,7 @@ const DailyCipher = () => {
         />
       </div>
       <p className="text-xs">Dialy Cipher</p>
-      <p className="mt-2 text-[10px] text-gray-400">12:16</p>
+      <p className="mt-2 text-[10px] text-gray-400">{dailyCipherTimeLeft}</p>
     </div>
   );
 };
